@@ -1,0 +1,9 @@
+
+[build]
+  publish = "/"
+  functions = "netlify_functions"
+
+[[redirects]]
+  from = "/verify"
+  to = "/.netlify/functions/verify"
+  status = 200

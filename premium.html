@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Premium — Digital Marketing Academy</title>
+<style>
+:root{--bg:#0f1720;--card:#071226;--accent:#06b6d4;--muted:#9aa6b2}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071022,#071728);color:#e6eef6}
+.container{max-width:1100px;margin:28px auto;padding:24px}
+.header{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;background:linear-gradient(90deg,#06b6d4,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:22px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
+.card{background:rgba(255,255,255,0.03);padding:20px;border-radius:14px}
+.feature{display:flex;gap:12px;align-items:center}
+.badge{display:inline-block;padding:6px 10px;background:#0b2540;border-radius:999px;color:#9be7ff;font-weight:700}
+.btn{background:var(--accent);color:#042233;padding:10px 12px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+.small{color:var(--muted);font-size:13px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="container">
+  <div class="header"><div class="logo">Digital Marketing Academy • Premium</div><div class="small">Advanced paths • Mentor support • Verified certificates</div></div>
+  <div class="grid">
+    <div>
+      <div class="card"><h2>Premium learning — projects, mentor time, and validated certificates</h2><p class="small">Includes practical capstones reviewed by mentors and a verified certificate with QR verification.</p>
+      <div style="margin-top:12px" class="feature"><div class="badge">Popular</div><div><strong>Premium Path: Growth Pro</strong><div class="small">6 weeks • Capstone project • Mentor review</div></div></div>
+      <div style="margin-top:12px"><button class="btn" id="buy-premium">Buy Premium — ₹2,999</button></div>
+      </div>
+      <div class="card" style="margin-top:12px"><h3>What's included</h3><ul class="small"><li>Mentor review (1 session)</li><li>Capstone project feedback</li><li>Verified certificate</li></ul></div>
+    </div>
+    <aside>
+      <div class="card"><h3>Sign in</h3>
+        <form id="signin">
+          <label class="small">Email</label><input name="email" style="width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <div style="margin-top:12px"><button class="btn" type="submit">Continue</button></div>
+        </form>
+      </div>
+      <div class="card" style="margin-top:12px"><h4>Payment options</h4><div class="small">Stripe & Razorpay examples are included in the repo as serverless functions you must configure.</div></div>
+    </aside>
+  </div>
+  <footer style="margin-top:18px" class="small">© DMA Premium • Replace text & configure payment keys in env vars.</footer>
+</div>
+<script>
+document.getElementById('buy-premium').addEventListener('click', async function(){
+  alert('Demo: this will call the createCheckout serverless function when deployed. Configure Stripe keys in env to enable.');
+});
+</script>
+</body></html>
