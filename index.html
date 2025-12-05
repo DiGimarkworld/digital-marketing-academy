@@ -1,100 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Digital Marketing Academy — Home</title>
-  <meta name="description" content="Learn digital marketing with curated free courses, practical tasks and platform certificates." />
-  <style>
-    :root{--accent:#0b76ef;--bg:#071023;--card:#072033;--muted:#9aa6b2}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071023 0%, #071728 100%);color:#e6eef6}
-    .wrap{max-width:1100px;margin:36px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6fd3ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042233}
-    h1{margin:0;font-size:30px}
-    p.lead{margin:8px 0 0;color:var(--muted)}
-    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
-    .hero{display:flex;gap:20px;margin-top:28px}
-    .left{flex:1}
-    .card{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px}
-    .cta{margin-top:16px}
-    .btn{background:var(--accent);color:#062233;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer}
-    footer{margin-top:28px;color:var(--muted);font-size:13px}
-    @media(max-width:900px){.hero{flex-direction:column}}
-  </style>
+  <meta charset="UTF-8" />
+  <title>LearnLaunch Labs – Level Up Your Skills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Curated online learning paths, verified certificates, and guided skill journeys for ambitious learners." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
+  <header class="hero">
+    <nav class="nav">
       <div class="brand">
-        <div class="logo">DMA</div>
-        <div>
-          <h1>Digital Marketing Academy</h1>
-          <div class="small">Curated learning tracks from Google, HubSpot, IBM + our assessments & certificates</div>
-        </div>
+        <img src="assets/logo.png" alt="LearnLaunch Labs" class="logo" />
+        <span>LearnLaunch Labs</span>
       </div>
-      <nav>
-        <a href="/courses.html">Courses</a>
-        <a href="/certificates.html">Certificates</a>
-        <a href="/dashboard/index.html">Dashboard</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="left">
-        <div class="card">
-          <h2>Turn free courses into real skills — follow curated paths and get certified</h2>
-          <p class="lead">We map the best free modules (Google, HubSpot, IBM) into focused pathways, add practical exercises and issue platform certificates.</p>
-          <div class="cta">
-            <a class="btn" href="/courses.html">Explore Courses</a>
-            <a class="btn" href="/certificates.html" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)">How it works</a>
-          </div>
-        </div>
+      <div class="nav-links">
+        <a href="#tracks">Tracks</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#checkout" class="nav-cta">Enroll now</a>
       </div>
-      <aside style="width:360px">
-        <div class="card">
-          <h3>Join now — Free</h3>
-          <form id="signup-form">
-            <label class="small">Full name</label>
-            <input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
-            <label class="small">Email</label>
-            <input name="email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"  />
-            <div style="margin-top:12px"><button class="btn" type="submit" style="width:100%">Register</button></div>
-          </form>
-          <p class="small" style="margin-top:12px">This demo posts to Google Apps Script or can be wired to Netlify forms.</p>
-        </div>
-      </aside>
+    </nav>
+    <div class="hero-content">
+      <h1>Launch your next skill, fast.</h1>
+      <p>Curated learning paths, accountability, and verified certificates designed for serious learners who want outcomes, not random videos.</p>
+      <div class="hero-cta">
+        <a href="#checkout" class="btn-primary">Join the next cohort</a>
+        <a href="#tracks" class="btn-secondary">Explore tracks</a>
+      </div>
+      <div class="hero-meta">
+        <span>✔ Curated online courses</span>
+        <span>✔ Weekly check‑ins</span>
+        <span>✔ Certificate verification</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="trust" class="trust">
+      <h2>Powered by leading platforms</h2>
+      <p>Learn through world‑class content from trusted education platforms while staying accountable inside a guided track.</p>
+      <div class="logos">
+        <a href="https://www.udemy.com/affiliate/" target="_blank" rel="noopener noreferrer">Udemy</a>
+        <a href="https://about.coursera.org/affiliates" target="_blank" rel="noopener noreferrer">Coursera</a>
+        <a href="https://www.datacamp.com/affiliates" target="_blank" rel="noopener noreferrer">DataCamp</a>
+      </div>
+      <p class="disclaimer">Disclaimer: These are affiliate links. You pay the same price; LearnLaunch Labs may earn a commission.</p>
     </section>
-
-    <section style="margin-top:18px" class="card">
-      <h3>Popular pathways</h3>
-      <ul class="small">
-        <li>SEO Specialist — Google Search + HubSpot SEO + Assessment</li>
-        <li>Digital Marketing Manager — Google Digital Garage + Social + Analytics</li>
-        <li>PPC & Analytics — Google Ads + GA + Practical Audit</li>
-      </ul>
+    <section id="tracks" class="tracks">
+      <h2>Pick your learning track</h2>
+      <div class="track-grid">
+        <article class="track-card">
+          <h3>Data & Analytics Sprint</h3>
+          <ul>
+            <li>Structured path from Excel to SQL and dashboards.</li>
+            <li>Mix of hands‑on projects and curated online courses.</li>
+            <li>Certificate verification on completion.</li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3>Product & No‑Code Builder</h3>
+          <ul>
+            <li>Learn product thinking and ship a live MVP.</li>
+            <li>Templates and tools to launch quickly.</li>
+            <li>Portfolio‑ready project with verification.</li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3>Career Change Navigator</h3>
+          <ul>
+            <li>Clarity, skill mapping, and guided exploration.</li>
+            <li>Access to curated degrees and certificates.</li>
+            <li>Supportive community of peers.</li>
+          </ul>
+        </article>
+      </div>
     </section>
-
-    <footer>
-      <div class="small">© Digital Marketing Academy • Deploy to Netlify / Vercel / GitHub Pages. Replace brand & tracking codes.</div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('signup-form').addEventListener('submit', async function(e){
-      e.preventDefault();
-      const data = {name: this.name.value, email: this.email.value};
-      if(window.APP_SHEET_URL){
-        await fetch(window.APP_SHEET_URL, {method:'POST',body:JSON.stringify(data),headers:{'Content-Type':'application/json'}});
-        alert('Thanks! We sent your registration.');
-      } else {
-        alert('Demo registration saved locally (no Apps Script configured).');
-        localStorage.setItem('dma_demo_registration', JSON.stringify(data));
-      }
-    });
-  </script>
+    <section id="how-it-works" class="how">
+      <h2>How it works</h2>
+      <ol>
+        <li><strong>Choose your track.</strong> Tell us your goals and timeline.</li>
+        <li><strong>Enroll securely.</strong> Pay via Stripe or Razorpay using the link below.</li>
+        <li><strong>Follow the roadmap.</strong> Get a clear weekly plan and curated course links.</li>
+        <li><strong>Earn and verify.</strong> Upload your completion certificates to get verified.</li>
+      </ol>
+    </section>
+    <section id="verification" class="verification">
+      <h2>Verify your certificate</h2>
+      <p>Already completed a track or partner course? Enter your Certificate ID to verify authenticity.</p>
+      <form id="verify-form">
+        <label for="certId">Certificate ID</label>
+        <input type="text" id="certId" name="certId" required />
+        <button type="submit" class="btn-secondary">Verify</button>
+      </form>
+      <p id="verify-result" class="verify-result"></p>
+    </section>
+    <section id="checkout" class="checkout">
+      <h2>Secure your seat</h2>
+      <p>Spots are limited for each cohort to keep the experience personal and high‑touch.</p>
+      <!-- Stripe checkout button (hosted payment link) -->
+      <!-- TODO: Replace href with your actual Stripe Payment Link URL from your Stripe Dashboard -->
+      <a
+        href="https://buy.stripe.com/your-stripe-payment-link"
+        class="btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pay with Stripe (Global)
+      </a>
+      <!-- Razorpay payment link (for India) -->
+      <!-- TODO: Replace href with your actual Razorpay Payment Link URL -->
+      <a
+        href="https://rzp.io/i/your-razorpay-payment-link"
+        class="btn-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pay with Razorpay (India)
+      </a>
+      <p class="secure-note">All payments are handled over secure, PCI‑compliant gateways. Your card details never touch our servers.</p>
+    </section>
+    <section id="faq" class="faq">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Who is this for?</summary>
+        <p>Ambitious learners who want structure, accountability, and proof of completion without wasting time on random content.</p>
+      </details>
+      <details>
+        <summary>How do certificates work?</summary>
+        <p>When you complete the required courses, upload your partner certificates. We verify and issue a LearnLaunch Labs verification link for your portfolio or LinkedIn.</p>
+      </details>
+      <details>
+        <summary>Can I expense this as training?</summary>
+        <p>In many companies it qualifies as learning and development. Check with your employer or accountant for your specific situation.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> LearnLaunch Labs. All rights reserved.</p>
+    <p>Made for learners who are serious about outcomes.</p>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
